@@ -20,7 +20,7 @@ attr_reader :id
     DB[:conn].execute(sql)
   end
 
-  def save
+  def selfsave
     if self.id
       self.update
     else
